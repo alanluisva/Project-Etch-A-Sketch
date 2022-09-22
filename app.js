@@ -11,7 +11,13 @@ let divs = document.querySelectorAll(".square");
 
 divs.forEach((div) => {
     div.addEventListener("mouseover", () => {
-        div.style.backgroundColor = "black";
+        const r = Math.floor(Math.random() * 256);
+        const g = Math.floor(Math.random() * 256);
+        const b = Math.floor(Math.random() * 256);
+
+        div.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+        div.style.filter = `brightness(1)`;
+        
     });
 });
 
@@ -37,7 +43,12 @@ function createGrid() {
     let divs = document.querySelectorAll(".square");
     divs.forEach((div) => {
         div.addEventListener("mouseover", () => {
-            div.style.backgroundColor = "black";
+            const r = Math.floor(Math.random() * 256);
+            const g = Math.floor(Math.random() * 256);
+            const b = Math.floor(Math.random() * 256);
+    
+            div.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+            div.style.filter = `brightness(1)`;
         });
     });
 }

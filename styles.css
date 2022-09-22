@@ -2,7 +2,7 @@
     height: 38px;
     width: 38px;
     box-sizing: border-box;
-    border: 0.05px solid black;
+    border: 0.05px solid rgb(0, 0, 0);
 }
 
 #container {
